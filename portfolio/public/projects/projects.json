@@ -1,0 +1,121 @@
+[
+  {
+    "name": "BESTOTAXI",
+    "desc": "Static Website Designed For Taxi Service Company With Different Design Patterns. Built Using Html, CSS , Javascript And Bootstrap.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2Fbestotaxi.png?alt=media&token=c338af6d-606e-446a-ab07-ba38b33056ad",
+    "category": "basicweb",
+    "links": {
+      "view": "https://bestotaxi.com/"
+    },
+    "showViewButton": true
+  },
+  {
+    "name": "AKIS",
+    "desc": "Static Website Designed For MEP And Interior Design Company With Different Design Patterns. Built Using Html, CSS , Javascript And Bootstrap.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2Fakis-tech.png?alt=media&token=3f7fac26-cb0b-48f5-b24c-f9b373a03cd7",
+    "category": "basicweb",
+    "links": {
+      "view": "https://akis-tech.com/"
+    },
+    "showViewButton": true
+  },
+  {
+    "name": "FECORESH",
+    "desc": "Static Website Designed For Detergent And Cleaning Solution Company With Different Design Patterns. Built Using Html, CSS , Javascript And Bootstrap.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2Ffecoresh.png?alt=media&token=3942a91a-b276-4c05-8ce5-6f1f39374cfd",
+    "category": "basicweb",
+    "links": {
+      "view": "https://fecoresh.com/"
+    },
+    "showViewButton": true
+  },
+  {
+    "name": "ALHASEENA",
+    "desc": "Admin App for billing management,which handle invoices, payments, and client data with responsive interface.Built Using Angular, Spring boot Java, mysql And Electron",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2Fadmin.jpeg?alt=media&token=a0e473b7-e259-44c4-b5bc-a208a28c8bba",
+    "category": "basicweb",
+    "showViewButton": false
+  },
+  {
+    "name": "THE VEDIC PRODUCT",
+    "desc": "Ecommerce app to sell their own products which handle orders, invoices, payments with responsive interface.It has two App like admin and ecommerce app.Built Using React, Spring boot Java and postgresql.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2FTVP.png?alt=media&token=28a65c32-1f89-4a86-8e71-4149ac5ef102",
+    "category": "basicweb",
+    "links": {
+      "view": "http://thevedicproducts.com/"
+    },
+    "showViewButton": true
+  },
+  {
+    "name": "GREY COLOR ME",
+    "desc": "Dynamic app to show their own products which handle orders, invoices, payments with responsive interface.It has two App like admin and ecommerce app.Built Using Angular and firebase.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2Fgreycolorme.png?alt=media&token=72dc84ad-67ce-4d08-a51c-3e48b22ebc7c",
+    "category": "basicweb",
+    "links": {
+      "view": "https://greycolorme.com/"
+    },
+    "showViewButton": true
+  },
+  {
+    "name": "MEERA BROILERS",
+    "desc": "Admin App for billing management which handle invoices, payments, and client data with responsive interface.Built Using Angular, Spring Boot Java, mysql.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2Fadmin.jpeg?alt=media&token=a0e473b7-e259-44c4-b5bc-a208a28c8bba",
+    "category": "basicweb",
+    "showViewButton": false
+  },
+  {
+    "name": "M STRUCTURE",
+    "desc": "Admin App to manage their staffs and projects which handle invoices, payments, and client data with responsive interface.Built Using Spring MVC java and postgresql.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2Fmstructure.png?alt=media&token=e148950e-547e-4c73-9d64-e6e818962107",
+    "category": "basicweb",
+    "showViewButton": false
+  },
+  {
+    "name": "PHARMACY APP",
+    "desc": "Admin App to manage billing and accounts for medical store which handle receipt, invoices, payments, and client data with responsive interface.Built Using React, DotNet and SQL.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2F9427317_4156106.jpg?alt=media&token=9bcc837a-29f7-48b8-85b6-dc6dc2b24a6b",
+    "category": "basicweb",
+    "showViewButton": false
+  },
+  {
+    "name": "Nalam Acc",
+    "desc": "Admin App to manage only accounting which handle invoices, payments with responsive interface.Built Using React, DotNet and SQL.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2F9153720_4090363.jpg?alt=media&token=69337a14-79a9-4ed0-879f-3054bcb29e61",
+    "category": "basicweb",
+    "showViewButton": false
+  },
+  {
+    "name": "Quran App",
+    "desc": "Dynamic app to show their quran juz, surah and verses with responsive interface.It has two App like admin web app and Android app.Built Using React, React-native, Spring Boot, mangoDB and firebase.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2F13123598_5165306.jpg?alt=media&token=8b6f63e0-6e67-4fdc-84de-de2b3d05800b",
+    "category": "Android",
+    "showViewButton": false
+  },
+  {
+    "name": "Invoice Generator",
+    "desc": "Fully fledged Web Admin app based on different design patterns. Built using MEAN stack.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2Fadmin.jpeg?alt=media&token=a0e473b7-e259-44c4-b5bc-a208a28c8bba",
+    "category": "basicweb",
+    "showViewButton": false
+  },
+  {
+    "name": "Portfolio Website",
+    "desc": "Personal Portfolio Website. Don't Need Much Info About It, Just Scroll Down. You're Here Only!",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2Fportfoilio.png?alt=media&token=3d47123a-7762-4543-a14f-b0f0b1c7e6d2",
+    "category": "basicweb",
+    "links": {
+      "view": "#"
+    },
+    "showViewButton": true
+  },
+  {
+    "name": "GRAVITYFORCETECH",
+    "desc": "Static Website Designed For MEP And Interior Design Company With Different Design Patterns. Built Using Html, CSS , Javascript And Bootstrap.",
+    "image": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/projects%2FGFT.png?alt=media&token=4b5e1104-51b9-49bf-ba0b-fc9bae13f1f4",
+    "category": "basicweb",
+    "links": {
+      "view": "https://gravityforcetech.com/"
+    },
+    "showViewButton": true
+  }
+  ]

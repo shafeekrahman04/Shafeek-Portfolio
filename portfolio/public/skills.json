@@ -1,0 +1,70 @@
+[
+    {
+        "name": "Spring Boot",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fspring-boot.png?alt=media&token=351a799a-68dd-4a8b-9dc0-b68419dbd083"
+    },
+    {
+        "name": "Java",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fjava.png?alt=media&token=4944d8ed-8be5-4e9e-9ea8-edd47c5bbb88"
+    },
+    {
+        "name": "ReactJS",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Freact.png?alt=media&token=66d80353-d656-4935-bd0e-2189e068c398"
+    },
+    {
+        "name": "ExpressJS",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fnode-js.png?alt=media&token=3d7182fb-54f4-44ea-b724-032ff5984cc7"
+    },
+    {
+        "name": "Firebase",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Ffirebase.png?alt=media&token=ffbed201-d1a4-4d7d-88e5-c797abc93f8e"
+    },
+    {
+        "name": "MaterialUI",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fmaterial-ui.png?alt=media&token=b446cf07-f1b6-4e81-8e6a-7debe819b7b7"
+    },
+    {
+        "name": "Bootstrap",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fbootstrap.png?alt=media&token=b75e0f93-1402-4f30-8710-ddccac2b4fb5"
+    },
+    {
+        "name": "HTML5",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fhtml-5--v1.png?alt=media&token=e54ba58a-8477-478a-aa50-a34b6b0cec5f"
+    },
+    {
+        "name": "CSS3",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fcss3.png?alt=media&token=630f3bf9-f486-47a1-902f-103ea90bd53a"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fjavascript--v1.png?alt=media&token=d4d2fc81-40f0-455b-a80c-5b8e06ff72ea"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fmongodb.png?alt=media&token=02803dfa-9fef-4c78-a37f-a7e016270bd6"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fmysql-logo.png?alt=media&token=ed1dd6f5-8794-4ce8-a90a-7366d6f54506"
+    },
+    {
+        "name": "PostgreSQL",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fpostgreesql.png?alt=media&token=6c975be1-e0d7-40ff-9465-5b964d4e3b49"
+    },
+    {
+        "name": "MS SQL",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fsql-server.png?alt=media&token=64c5f305-0d16-467a-925c-dd2d47b693fd"
+    },
+    {
+        "name": "Netlify",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fnetlify.png?alt=media&token=cb334435-6b10-48e4-818d-2cdce3a8031e"
+    },
+    {
+        "name": "Git VCS",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fgit.png?alt=media&token=470e4803-5178-48f5-893b-a1229ea2d427"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://firebasestorage.googleapis.com/v0/b/shafeek-portfolio.appspot.com/o/skills%2Fgithub.png?alt=media&token=3fc931c5-7dde-46e0-9e70-2b652f63e5b7"
+    }
+]
