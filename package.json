@@ -1,0 +1,27 @@
+{
+  "name": "shafeek-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "postinstall": "node -e \"const fs = require('fs'); const p = './node_modules/@rollup/rollup-win32-x64-msvc'; if (fs.existsSync(p)) { fs.cpSync('./node_modules/@rollup/wasm-node', p, { recursive: true, force: true }); fs.writeFileSync(p + '/package.json', JSON.stringify({ name: '@rollup/rollup-win32-x64-msvc', version: '4.68.2', main: './dist/native.js' })); try { fs.unlinkSync(p + '/rollup.win32-x64-msvc.node'); } catch(e){} }\""
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "scrollreveal": "^4.0.9",
+    "typed.js": "^2.1.0",
+    "vanilla-tilt": "^1.8.1"
+  },
+  "devDependencies": {
+    "@rollup/wasm-node": "4.68.2",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.2"
+  }
+}
