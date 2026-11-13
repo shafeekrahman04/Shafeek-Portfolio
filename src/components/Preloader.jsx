@@ -9,9 +9,9 @@ const Preloader = () => {
       setFaded(true);
       const hideTimer = setTimeout(() => {
         setHidden(true);
-      }, 1000);
+      }, 700);
       return () => clearTimeout(hideTimer);
-    }, 500);
+    }, 400);
 
     return () => clearTimeout(timer);
   }, []);
@@ -20,7 +20,12 @@ const Preloader = () => {
 
   return (
     <div className={`loader-container ${faded ? 'fade-out' : ''}`}>
-      <img draggable="false" src="/assets/images/preloader.gif" alt="" />
+      <div className="modern-spinner">
+        <div className="spinner-ring"></div>
+        <div className="spinner-core">
+          <span className="spinner-initials">SR</span>
+        </div>
+      </div>
     </div>
   );
 };

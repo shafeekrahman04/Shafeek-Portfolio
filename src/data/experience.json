@@ -1,32 +1,34 @@
 [
   {
-    "role": "Senior Software Engineer",
+    "role": "Senior Frontend Developer",
     "company": "Asta Systech",
-    "period": "Jul 2024 - Present",
-    "side": "right"
-  },
-  {
-    "role": "Software Engineer",
-    "company": "Asta Systech",
-    "period": "Jul 2023 - Jun 2024",
-    "side": "left"
+    "period": "July 2023 - Present",
+    "side": "right",
+    "desc": "Translated complex business requirements into interactive user interfaces for construction and pharma ERPs. Successfully reduced UI-related bug reports by 30% through rigorous cross-browser testing and debugging. Spearheaded the transition from static templates to dynamic React-based architectures for client-facing apps.",
+    "skills": ["React.js", "Next.js", "TypeScript", "Node.js", "ERP Systems"]
   },
   {
     "role": "Junior Software Developer",
     "company": "Asta Systech",
-    "period": "Jul 2022 - Jun 2023",
-    "side": "right"
+    "period": "July 2022 - June 2023",
+    "side": "left",
+    "desc": "Developed interactive client storefronts and responsive admin dashboards. Integrated secure RESTful APIs, optimized state management for high-volume data records, and improved cross-browser performance.",
+    "skills": ["JavaScript (ES6+)", "React.js", "REST APIs", "Bootstrap", "Git"]
   },
   {
     "role": "Associate Software Developer",
     "company": "Asta Systech",
-    "period": "Jan 2022 - Jul 2022",
-    "side": "left"
+    "period": "January 2022 - July 2022",
+    "side": "right",
+    "desc": "Engineered modular UI components, implemented client-side validation and authentication flows, and collaborated in Agile sprints to ship reliable software releases.",
+    "skills": ["HTML5", "CSS3", "JavaScript", "UI/UX", "Postman"]
   },
   {
     "role": "Trainee",
     "company": "Asta Systech",
-    "period": "Sep 2021 - Dec 2021",
-    "side": "right"
+    "period": "September 2021 - December 2021",
+    "side": "left",
+    "desc": "Completed intensive training in full-stack software development workflows, clean code architecture, Git version control, and frontend engineering principles.",
+    "skills": ["Web Development", "Git", "Clean Code Practices"]
   }
 ]

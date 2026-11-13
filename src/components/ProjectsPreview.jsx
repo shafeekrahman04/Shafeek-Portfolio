@@ -8,13 +8,16 @@ const ProjectsPreview = () => {
 
   const previewProjects = projectsData
     .filter((project) => project.category !== 'android')
-    .slice(0, 10);
+    .slice(0, 9);
 
   useEffect(() => {
     if (containerRef.current) {
       const tiltNodes = containerRef.current.querySelectorAll('.tilt');
       VanillaTilt.init(tiltNodes, {
-        max: 15,
+        max: 12,
+        speed: 300,
+        glare: true,
+        'max-glare': 0.15,
       });
     }
 
@@ -33,27 +36,34 @@ const ProjectsPreview = () => {
   return (
     <section className="work" id="work">
       <h2 className="heading">
-        <i className="fas fa-laptop-code"></i> Projects <span>Made</span>
+        <i className="fas fa-laptop-code"></i> Featured <span>Projects</span>
       </h2>
+      <p className="section-subtext">
+        A selection of commercial and personal applications I have built
+      </p>
+
       <div className="box-container" ref={containerRef}>
         {previewProjects.map((project, index) => (
-          <div className="box tilt" key={index}>
-            <img draggable="false" src={project.image} alt={project.name || 'project'} />
+          <div className="box tilt project-card" key={index}>
+            <div className="project-img-wrapper">
+              <img draggable="false" src={project.image} alt={project.name || 'project'} loading="lazy" />
+            </div>
             <div className="content">
               <div className="tag">
                 <h3>{project.name}</h3>
               </div>
-              <div className="desc" style={{ fontSize: '14px' }}>
+              <div className="desc">
                 <p>{project.desc}</p>
                 <div className="btns">
                   {project.showViewButton && (
                     <a
                       href={project.links?.view || '#'}
-                      className="btn"
+                      className="btn btn-view"
                       target="_blank"
                       rel="noreferrer"
                     >
-                      <i className="fas fa-eye"></i> View
+                      <span>Live Demo</span>
+                      <i className="fas fa-external-link-alt"></i>
                     </a>
                   )}
                 </div>
@@ -62,9 +72,10 @@ const ProjectsPreview = () => {
           </div>
         ))}
       </div>
+
       <div className="viewall">
         <Link to="/projects" className="btn">
-          <span>View All</span>
+          <span>Explore All Projects ({projectsData.length})</span>
           <i className="fas fa-arrow-right"></i>
         </Link>
       </div>

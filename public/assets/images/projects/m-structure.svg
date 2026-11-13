@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450" width="100%" height="100%">
+    <defs>
+      <linearGradient id="bg-m-structure" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#1e1b4b"/>
+        <stop offset="100%" stop-color="#3730a3"/>
+      </linearGradient>
+      <linearGradient id="card-m-structure" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="rgba(255,255,255,0.12)"/>
+        <stop offset="100%" stop-color="rgba(0,0,0,0.4)"/>
+      </linearGradient>
+    </defs>
+    <rect width="700" height="450" fill="url(#bg-m-structure)"/>
+    <circle cx="600" cy="50" r="160" fill="rgba(255,255,255,0.04)"/>
+    <circle cx="100" cy="400" r="180" fill="rgba(0,0,0,0.15)"/>
+    
+    <!-- Browser Window Shell -->
+    <rect x="50" y="45" width="600" height="360" rx="16" fill="rgba(15,23,42,0.85)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+    <rect x="50" y="45" width="600" height="45" rx="16" fill="rgba(30,41,59,0.9)"/>
+    
+    <!-- Window controls -->
+    <circle cx="80" cy="68" r="6" fill="#ef4444"/>
+    <circle cx="100" cy="68" r="6" fill="#f59e0b"/>
+    <circle cx="120" cy="68" r="6" fill="#10b981"/>
+    
+    <!-- Address bar -->
+    <rect x="150" y="56" width="380" height="24" rx="12" fill="rgba(15,23,42,0.6)"/>
+    <text x="340" y="72" font-family="'Courier New', monospace" font-size="11" fill="#94a3b8" text-anchor="middle">https://m-structure.app</text>
+    
+    <!-- Content Card -->
+    <g transform="translate(100, 140)">
+      <rect x="0" y="0" width="500" height="220" rx="12" fill="url(#card-m-structure)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <circle cx="65" cy="65" r="35" fill="rgba(255,255,255,0.1)"/>
+      <path d="M6 26V6l10-4 10 4v20H6zm4-16h4v4h-4v-4zm0 6h4v4h-4v-4zm8-6h4v4h-4v-4zm0 6h4v4h-4v-4z" fill="#a5b4fc" transform="translate(45, 45) scale(1.2)"/>
+      <text x="125" y="55" font-family="'Poppins', sans-serif" font-size="22" font-weight="800" fill="#ffffff" letter-spacing="0.5">M STRUCTURE</text>
+      <rect x="125" y="70" width="220" height="24" rx="12" fill="rgba(255,255,255,0.08)"/>
+      <text x="235" y="86" font-family="'Poppins', sans-serif" font-size="11" font-weight="600" fill="#a5b4fc" text-anchor="middle">STAFF & PROJECT PORTAL</text>
+      
+      <!-- Tech stack pills -->
+      <g transform="translate(30, 135)">
+        <rect x="0" y="0" width="85" height="26" rx="6" fill="rgba(99,102,241,0.2)" stroke="rgba(99,102,241,0.4)"/>
+        <text x="42" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">React.js</text>
+        
+        <rect x="95" y="0" width="95" height="26" rx="6" fill="rgba(56,189,248,0.2)" stroke="rgba(56,189,248,0.4)"/>
+        <text x="142" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">REST APIs</text>
+        
+        <rect x="200" y="0" width="85" height="26" rx="6" fill="rgba(16,185,129,0.2)" stroke="rgba(16,185,129,0.4)"/>
+        <text x="242" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">JWT Auth</text>
+        
+        <rect x="295" y="0" width="125" height="26" rx="6" fill="rgba(245,158,11,0.2)" stroke="rgba(245,158,11,0.4)"/>
+        <text x="357" y="17" font-family="sans-serif" font-size="11" font-weight="600" fill="#ffffff" text-anchor="middle">Responsive UI</text>
+      </g>
+    </g>
+  </svg>

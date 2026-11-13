@@ -20,50 +20,56 @@ const Footer = () => {
   };
 
   return (
-    <section className="footer" id="contact">
+    <footer className="footer">
       <div className="box-container">
-        <div className="box">
-          <h3>Shafeek's Portfolio</h3>
+        <div className="box footer-about">
+          <h3>Shafeek Rahman</h3>
           <p>
-            Thank you for visiting my personal portfolio website. Connect with me over socials.{' '}
-            <br /> <br /> Keep Rising 🚀. Connect with me over live chat!
+            Senior Frontend Developer with 5+ years of experience architecting dynamic React, Next.js, and TypeScript web applications for enterprise ERPs and digital products.
           </p>
+          <div className="footer-status">
+            <span className="pulse-indicator"></span>
+            <span>⚡ Immediate Joiner • Bengaluru, Karnataka, India</span>
+          </div>
         </div>
-        <div className="box">
-          <h3>quick links</h3>
+
+        <div className="box footer-links">
+          <h3>Quick Links</h3>
           <a href="/#home" onClick={(e) => handleNavClick(e, 'home')}>
-            <i className="fas fa-chevron-circle-right"></i> home
+            <i className="fas fa-chevron-right"></i> Home
           </a>
           <a href="/#about" onClick={(e) => handleNavClick(e, 'about')}>
-            <i className="fas fa-chevron-circle-right"></i> about
+            <i className="fas fa-chevron-right"></i> About
           </a>
           <a href="/#skills" onClick={(e) => handleNavClick(e, 'skills')}>
-            <i className="fas fa-chevron-circle-right"></i> skills
+            <i className="fas fa-chevron-right"></i> Skills
           </a>
           <a href="/#education" onClick={(e) => handleNavClick(e, 'education')}>
-            <i className="fas fa-chevron-circle-right"></i> education
+            <i className="fas fa-chevron-right"></i> Education
           </a>
           <a href="/#work" onClick={(e) => handleNavClick(e, 'work')}>
-            <i className="fas fa-chevron-circle-right"></i> work
+            <i className="fas fa-chevron-right"></i> Projects
           </a>
           <a href="/#experience" onClick={(e) => handleNavClick(e, 'experience')}>
-            <i className="fas fa-chevron-circle-right"></i> experience
+            <i className="fas fa-chevron-right"></i> Experience
           </a>
         </div>
-        <div className="box">
-          <h3>contact info</h3>
+
+        <div className="box footer-contact">
+          <h3>Contact Info</h3>
           <p>
-            {' '}
-            <i className="fas fa-phone"></i>+91 7094677840
+            <i className="fas fa-phone-alt"></i>
+            <a href="tel:+917094677840">+91 7094677840</a>
           </p>
           <p>
-            {' '}
-            <i className="fas fa-envelope"></i>shafeekrahman04@gmail.com
+            <i className="fas fa-envelope"></i>
+            <a href="mailto:shafeekrahman04@gmail.com">shafeekrahman04@gmail.com</a>
           </p>
           <p>
-            {' '}
-            <i className="fas fa-map-marked-alt"></i>TN, India-627005
+            <i className="fas fa-map-marker-alt"></i>
+            <span>Bengaluru, Karnataka, India</span>
           </p>
+
           <div className="share">
             <a
               href="https://www.linkedin.com/in/shafeek-rahman-280a17275"
@@ -71,13 +77,23 @@ const Footer = () => {
               aria-label="LinkedIn"
               target="_blank"
               rel="noreferrer"
+              title="LinkedIn"
+            ></a>
+            <a
+              href="https://github.com/shafeekrahman04"
+              className="fab fa-github"
+              aria-label="GitHub"
+              target="_blank"
+              rel="noreferrer"
+              title="GitHub"
             ></a>
             <a
               href="mailto:shafeekrahman04@gmail.com"
               className="fas fa-envelope"
-              aria-label="Mail"
+              aria-label="Email"
               target="_blank"
               rel="noreferrer"
+              title="Email"
             ></a>
             <a
               href="https://t.me/shafeekrahman"
@@ -85,22 +101,25 @@ const Footer = () => {
               aria-label="Telegram"
               target="_blank"
               rel="noreferrer"
+              title="Telegram"
             ></a>
           </div>
         </div>
       </div>
 
-      <h1 className="credit">
-        Designed with <i className="fa fa-heart pulse"></i> by{' '}
-        <a
-          href="https://www.linkedin.com/in/shafeek-rahman-280a17275"
-          target="_blank"
-          rel="noreferrer"
-        >
-          shafeek rahman
-        </a>
-      </h1>
-    </section>
+      <div className="credit-bar">
+        <p className="credit">
+          Designed & Built with <i className="fa fa-heart pulse"></i> by{' '}
+          <a
+            href="https://www.linkedin.com/in/shafeek-rahman-280a17275"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Shafeek Rahman
+          </a>
+        </p>
+      </div>
+    </footer>
   );
 };
 

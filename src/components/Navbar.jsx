@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = ({ activeOverride }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
   const location = useLocation();
   const navigate = useNavigate();
@@ -15,13 +16,17 @@ const Navbar = ({ activeOverride }) => {
       return;
     }
 
-    if (!isHome) return;
-
     const handleScroll = () => {
-      setMenuOpen(false);
+      if (window.scrollY > 30) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+
+      if (!isHome) return;
 
       const sections = ['home', 'about', 'skills', 'education', 'work', 'experience', 'contact'];
-      const scrollPos = window.scrollY + 200;
+      const scrollPos = window.scrollY + 250;
 
       for (let i = sections.length - 1; i >= 0; i--) {
         const sec = document.getElementById(sections[i]);
@@ -55,7 +60,6 @@ const Navbar = ({ activeOverride }) => {
         window.history.pushState(null, '', `#${sectionId}`);
       }
     } else {
-      // If on another route, navigate to /#sectionId
       e.preventDefault();
       navigate(`/#${sectionId}`);
     }
@@ -72,15 +76,24 @@ const Navbar = ({ activeOverride }) => {
   ];
 
   return (
-    <header>
-      <Link to="/" className="logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-        <i className="fab fa-node-js"></i> Shafeek
+    <header className={scrolled ? 'header-scrolled' : ''}>
+      <Link
+        to="/"
+        className="logo"
+        onClick={() => {
+          setMenuOpen(false);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }}
+      >
+        <span className="logo-icon"><i className="fab fa-node-js"></i></span>
+        <span className="logo-text">Shafeek<span className="logo-dot">.</span></span>
       </Link>
 
       <div
         id="menu"
         className={`fas ${menuOpen ? 'fa-times' : 'fa-bars'}`}
         onClick={toggleMenu}
+        aria-label="Toggle navigation menu"
       />
 
       <nav className={`navbar ${menuOpen ? 'nav-toggle' : ''}`}>
