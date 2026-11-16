@@ -11,7 +11,7 @@ function App() {
     const handleVisibilityChange = () => {
       const favicon = document.getElementById('favicon');
       if (document.visibilityState === 'visible') {
-        document.title = 'Portfolio | Shafeek Rahman';
+        document.title = 'Shafeek Rahman | Senior Frontend Developer';
         if (favicon) favicon.setAttribute('href', '/assets/images/favicon.png');
       } else {
         document.title = 'Come Back To Portfolio';
