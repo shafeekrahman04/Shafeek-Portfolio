@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Experience from './pages/Experience';
 import ScrollToAnchor from './components/ScrollToAnchor';
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
   return (
     <>
       <ScrollToAnchor />
+      <Analytics />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
