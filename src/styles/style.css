@@ -1274,6 +1274,11 @@ header .navbar ul li a.active {
   font-size: 1.4rem;
   font-weight: 500;
 }
+.status-banner.submitting {
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  color: #60a5fa;
+}
 .status-banner.success {
   background: rgba(16, 185, 129, 0.15);
   border: 1px solid rgba(16, 185, 129, 0.4);
@@ -1283,6 +1288,27 @@ header .navbar ul li a.active {
   background: rgba(239, 68, 68, 0.15);
   border: 1px solid rgba(239, 68, 68, 0.4);
   color: #f87171;
+  flex-wrap: wrap;
+}
+.btn-fallback-mail {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+  padding: 0.6rem 1.4rem;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.btn-fallback-mail:hover {
+  background: #2563eb;
+  border-color: #3b82f6;
+  color: #ffffff;
 }
 
 .contact-form-card .form-group {

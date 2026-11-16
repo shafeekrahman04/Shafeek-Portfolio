@@ -7,33 +7,74 @@ const Contact = () => {
     phone: '',
     message: ''
   });
-  const [status, setStatus] = useState({ state: 'idle', message: '' });
+  const [status, setStatus] = useState({
+    state: 'idle', // 'idle' | 'submitting' | 'success' | 'error'
+    message: '',
+    fallbackMailto: ''
+  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!formData.name || !formData.email || !formData.message) {
-      setStatus({ state: 'error', message: 'Please fill out all required fields.' });
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+      setStatus({
+        state: 'error',
+        message: 'Please fill out all required fields marked with *.',
+        fallbackMailto: ''
+      });
       return;
     }
 
-    setStatus({ state: 'submitting', message: 'Sending message...' });
+    setStatus({
+      state: 'submitting',
+      message: 'Sending your message via Resend...',
+      fallbackMailto: ''
+    });
 
-    // Open mail client as reliable direct fallback or handle submission
-    setTimeout(() => {
-      setStatus({
-        state: 'success',
-        message: 'Thank you! Your message has been sent successfully. I will get back to you soon.'
+    const fallbackUrl = `mailto:shafeekrahman04@gmail.com?subject=${encodeURIComponent(
+      `Portfolio Inquiry from ${formData.name}`
+    )}&body=${encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone || 'N/A'}\n\nMessage:\n${formData.message}`
+    )}`;
+
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
       });
-      setFormData({ name: '', email: '', phone: '', message: '' });
-      setTimeout(() => {
-        setStatus({ state: 'idle', message: '' });
-      }, 5000);
-    }, 800);
+
+      const data = await response.json().catch(() => ({}));
+
+      if (response.ok && data.success) {
+        setStatus({
+          state: 'success',
+          message: `Thank you, ${formData.name}! Your message has been sent successfully. I will respond to ${formData.email} shortly.`,
+          fallbackMailto: ''
+        });
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } else {
+        const errorMsg = data.error || 'Failed to deliver message via Resend.';
+        setStatus({
+          state: 'error',
+          message: errorMsg,
+          fallbackMailto: fallbackUrl
+        });
+      }
+    } catch (err) {
+      console.error('Submission error:', err);
+      setStatus({
+        state: 'error',
+        message: 'Could not connect to the email service. You can send your message directly via email below:',
+        fallbackMailto: fallbackUrl
+      });
+    }
   };
 
   return (
@@ -131,14 +172,22 @@ const Contact = () => {
           <form id="contact-form" onSubmit={handleSubmit}>
             <div className="form-title">
               <h3>Send a Message</h3>
-              <p>Fill out the form below and I'll respond within 24 hours.</p>
+              <p>Powered by Resend. Fill out the form below and I'll respond promptly.</p>
             </div>
 
             {status.message && (
               <div className={`status-banner ${status.state}`}>
+                {status.state === 'submitting' && <i className="fas fa-spinner fa-spin"></i>}
                 {status.state === 'success' && <i className="fas fa-check-circle"></i>}
                 {status.state === 'error' && <i className="fas fa-exclamation-circle"></i>}
-                <span>{status.message}</span>
+                <div style={{ flex: 1 }}>
+                  <div>{status.message}</div>
+                  {status.fallbackMailto && (
+                    <a href={status.fallbackMailto} className="btn-fallback-mail">
+                      <i className="fas fa-paper-plane"></i> Send Direct Email Instead
+                    </a>
+                  )}
+                </div>
               </div>
             )}
 
@@ -172,7 +221,7 @@ const Contact = () => {
                 <input
                   type="tel"
                   name="phone"
-                  placeholder="Your Phone Number"
+                  placeholder="Your Phone Number (Optional)"
                   value={formData.phone}
                   onChange={handleChange}
                 />
@@ -197,8 +246,8 @@ const Contact = () => {
                 className="btn btn-primary"
                 disabled={status.state === 'submitting'}
               >
-                <span>{status.state === 'submitting' ? 'Sending...' : 'Send Message'}</span>
-                <i className="fas fa-paper-plane"></i>
+                <span>{status.state === 'submitting' ? 'Sending via Resend...' : 'Send Message'}</span>
+                <i className={`fas ${status.state === 'submitting' ? 'fa-spinner fa-spin' : 'fa-paper-plane'}`}></i>
               </button>
             </div>
           </form>
