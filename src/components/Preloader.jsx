@@ -9,9 +9,9 @@ const Preloader = () => {
       setFaded(true);
       const hideTimer = setTimeout(() => {
         setHidden(true);
-      }, 700);
+      }, 250);
       return () => clearTimeout(hideTimer);
-    }, 400);
+    }, 150);
 
     return () => clearTimeout(timer);
   }, []);

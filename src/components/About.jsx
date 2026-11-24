@@ -108,7 +108,7 @@ const About = () => {
 
           <div className="resumebtn">
             <a
-              href="/assets/SHAFEEK RAHMAN SOFTWARE DEVELOPERS.pdf"
+              href="/assets/Shafeek_Rahman_Resume.pdf"
               target="_blank"
               rel="noreferrer"
               className="btn"

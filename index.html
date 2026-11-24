@@ -10,7 +10,7 @@
   <title>Shafeek Rahman | Senior Frontend Developer &amp; UI Engineer</title>
   <meta name="title" content="Shafeek Rahman | Senior Frontend Developer & UI Engineer" />
   <meta name="description"
-    content="Senior Frontend Developer with 3+ years of experience building modern, responsive, high-performance web applications using React.js, Next.js, Redux, and modern JavaScript. Immediate joiner based in Bengaluru." />
+    content="Senior Frontend Developer with 5+ years of experience building modern, responsive, high-performance web applications using React.js, Next.js, TypeScript, and modern JavaScript. Immediate joiner based in Bengaluru." />
   <meta name="keywords"
     content="Shafeek Rahman, Frontend Developer, Senior Frontend Developer, React.js Developer, UI Engineer, JavaScript Developer, TypeScript, Next.js, Web Developer Portfolio, Bengaluru Frontend Developer" />
   <meta name="author" content="Shafeek Rahman" />
@@ -57,13 +57,18 @@
   <script type="module" src="/src/main.jsx"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js')
-        .then((registration) => {
-          console.log('Service Worker registered with scope:', registration.scope);
-        })
-        .catch((error) => {
-          console.error('Service Worker registration failed:', error);
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+      if (window.caches) {
+        caches.keys().then(function(names) {
+          for (let name of names) {
+            caches.delete(name);
+          }
         });
+      }
     }
   </script>
 </body>
